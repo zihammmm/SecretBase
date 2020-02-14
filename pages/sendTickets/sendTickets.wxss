@@ -1,0 +1,46 @@
+/* pages/sendTickets/sendTickets.wxss */
+
+.whole {
+  padding-top: 10px;
+}
+
+.font {
+  font-size: 14px;
+  padding-left: 16px;
+  margin-bottom: 8px;
+}
+
+.radiogroup {
+  display: flex;
+  flex-direction: row;
+  padding-left: 14px;
+}
+
+.block {
+  margin-bottom: 15px;
+}
+
+.buttongroup {
+  margin-left: 30px;
+  margin-right: 30px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+}
+
+.addnewtype-info {
+  padding-top: 15px;
+  text-align: center;
+}
+
+.addnewtype-input {
+  margin: 13px;
+  border: 1px solid lightgray;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.scroll-view-style {
+  height: 30px;
+  white-space: nowrap;
+}

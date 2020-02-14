@@ -1,0 +1,14 @@
+/* pages/signup/signup.wxss */
+
+.text {
+  text-align: center;
+  padding: 20px;
+}
+
+.invite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px;
+}

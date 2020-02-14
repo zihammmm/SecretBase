@@ -1,0 +1,24 @@
+<!--pages/signup/signup.wxml-->
+<view class="invite">
+  <view>我要邀请别人</view>
+  <van-button class="text" square type="primary" bind:click="generateCode">生成邀请码</van-button>
+</view>
+
+<view class="invite">我要接受邀请</view>
+<van-cell-group>
+  <van-field
+    value="{{ value }}"
+    center
+    clearable
+    placeholder="请输入邀请码"
+    border
+    bind:input="input"
+    use-button-slot
+    adjust-position
+  >
+  <van-button slot="button" size="small" type="primary" bind:click="confirm"> 确定</van-button>
+</van-field>
+</van-cell-group>
+
+<van-notify id="van-notify" />
+

@@ -1,0 +1,39 @@
+/**index.wxss**/
+page{
+  height: 100%;
+}
+
+.container {
+  background-image: url('https://7465-test-wszl0-1301186986.tcb.qcloud.la/background.png?sign=2eb793d43ff800c7c16a96eacc5e753e&t=1581428322');
+  background-size: 100% 100%;
+  margin: 0;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.buttonset {
+  position: fixed;
+  bottom: 20px;
+}
+
+.buttonstyle {
+  margin: 10px;
+  background-size: 100% 100%;
+
+}
+
+.repButton {
+  background-color: #C5C0DB;
+}
+
+.sendButton {
+  background-color: #FFF0DB;
+}
+
+.aboutButton {
+  background-color: #F8F8FF;
+}

@@ -1,0 +1,54 @@
+<!--pages/sendTickets/sendTickets.wxml-->
+<modal show="{{showModal}}" height='150px' bindcancel="modalCancel" bindconfirm='modalConfirm'>
+  <view class='modal-content'>
+    <view class="addnewtype-info">请输入新种类:</view>
+    <input focus="{{true}}" class="addnewtype-input" bindinput="bindValueInput"> </input>
+  </view>
+</modal>
+
+<view class="whole">
+  <view class="block">
+    <view class="font">种类:</view>
+    <scroll-view scroll-x class="scroll-view-style">
+      <view style="display: flex; flex-direction: row;">
+        <van-radio-group value="{{ radio }}" bind:change="radioOnChange" class="radiogroup">
+          <view wx:for="{{defaultTicketType}}" style="padding-right:15px;" wx:key="name">
+            <van-radio icon-size="15px" name="{{item.name}}">
+              <text>{{item.value}}</text>
+            </van-radio>
+          </view>
+          <view wx:for="{{userTicketType}}" style="padding-right:15px;" wx:key="name">
+            <van-radio icon-size="15px" name="{{item.name}}">
+              <text>{{item.value}}</text>
+            </van-radio>
+          </view>
+        </van-radio-group>
+        <van-icon name="add-o" bind:click="addType" />
+      </view>
+    </scroll-view>
+  </view>
+
+  <!--
+  <view>
+    <text class="font">数量:</text>
+    <van-dropdown-menu>
+      <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
+    </van-dropdown-menu>
+  </view>
+  -->
+  <view class="block">
+    <van-cell-group>
+      <van-field value="{{ value }}" placeholder="描述下能干嘛" label="描述" bind:change="descOnChange" />
+    </van-cell-group>
+  </view>
+  <view class="block">
+    <van-cell-group>
+      <van-field value="{{ value }}" placeholder="说点什么呢" label="备注" bind:change="comOnChange" />
+    </van-cell-group>
+  </view>
+  <view class="buttongroup">
+    <van-button type="primary" bind:click="send">确认</van-button>
+    <van-button type="primary" bind:click="cancel">取消</van-button>
+  </view>
+
+</view>

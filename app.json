@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/main/main",
+    "pages/about/about",
+    "pages/signup/signup",
+    "pages/sendTickets/sendTickets",
+    "component/modal/modal"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#F59999",
+    "navigationBarTitleText": "iBay",
+    "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {
+    "van-field": "pages/miniprogram_npm/vant-weapp/field/index",
+    "van-button": "pages/miniprogram_npm/vant-weapp/button/index",
+    "van-tab": "pages/miniprogram_npm/vant-weapp/tab/index",
+    "van-tabs": "pages/miniprogram_npm/vant-weapp/tabs/index",
+    "van-card": "pages/miniprogram_npm/vant-weapp/card/index",
+    "van-swipe-cell": "pages/miniprogram_npm/vant-weapp/swipe-cell/index",
+    "van-icon": "pages/miniprogram_npm/vant-weapp/icon/index",
+    "van-popup": "pages/miniprogram_npm/vant-weapp/popup/index",
+    "van-notify": "pages/miniprogram_npm/vant-weapp/notify/index",
+    "van-overlay": "pages/miniprogram_npm/vant-weapp/overlay/index",
+    "van-loading": "pages/miniprogram_npm/vant-weapp/loading/index",
+    "van-radio": "pages/miniprogram_npm/vant-weapp/radio/index",
+    "van-radio-group": "pages/miniprogram_npm/vant-weapp/radio-group/index",
+    "van-dropdown-menu": "pages/miniprogram_npm/vant-weapp/dropdown-menu/index",
+    "van-dropdown-item": "pages/miniprogram_npm/vant-weapp/dropdown-item/index",
+    "van-dialog": "pages/miniprogram_npm/vant-weapp/dialog/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

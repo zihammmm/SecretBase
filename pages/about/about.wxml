@@ -1,0 +1,13 @@
+<!--pages/feedback/feedback.wxml-->
+<view class="container">
+  <text class="title">
+    关于
+  </text>
+  <view class="textblock">版本号:v1.0</view>
+  <view class="textblock">本小程序诞生啦!这是献给小徐的礼物!</view>
+  <view class="textblock">本小程序为情侣间的小游戏，可以给另一半发送兑换券，券的内容可以自定。</view>
+  <view class="textblock">封面由小徐制作完成</view>
+  <button size="mini" open-type="feedback" class="buttonstyle">
+    反馈
+  </button>
+</view>
